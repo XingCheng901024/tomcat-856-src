@@ -1,0 +1,57 @@
+#启动时要加入这些参数
+-Dcatalina.home=D:\sources\tomcat-856-src
+-Dcatalina.base=D:\sources\tomcat-856-src
+-Djava.endorsed.dirs=D:\sources\tomcat-856-src\endorsed
+-Djava.io.tmpdir=D:\sources\tomcat-856-src\temp
+-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+-Djava.util.logging.config.file=D:\sources\tomcat-856-src\conf\logging.properties
+
+#BootStrap ClassLoader 加载的文件:
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\resources.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\rt.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\sunrsasign.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\jsse.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\jce.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\charsets.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\jfr.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\classes;
+	C:\Users\XingCheng\.IntelliJIdea2017.3\system\captureAgent\debugger-agent-storage.jar
+
+#EtxClassLoader 加载文件:
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext;
+	C:\WINDOWS\Sun\Java\lib\ext
+
+#AppClassLoader 加载文件:
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\charsets.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\deploy.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\access-bridge-64.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\cldrdata.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\dnsns.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\jaccess.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\jfxrt.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\localedata.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\nashorn.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\sunec.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\sunjce_provider.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\sunmscapi.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\sunpkcs11.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\ext\zipfs.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\javaws.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\jce.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\jfr.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\jfxswt.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\jsse.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\management-agent.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\plugin.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\resources.jar;
+	D:\Program Files\Java\jdk1.8.0_74\jre\lib\rt.jar;
+	D:\sources\tomcat-856-src\target\classes;
+	C:\Users\XingCheng\.m2\repository\org\easymock\easymock\3.4\easymock-3.4.jar;
+	C:\Users\XingCheng\.m2\repository\org\objenesis\objenesis\2.2\objenesis-2.2.jar;
+	C:\Users\XingCheng\.m2\repository\org\apache\ant\ant\1.7.0\ant-1.7.0.jar;
+	C:\Users\XingCheng\.m2\repository\org\apache\ant\ant-launcher\1.7.0\ant-launcher-1.7.0.jar;
+	C:\Users\XingCheng\.m2\repository\wsdl4j\wsdl4j\1.6.2\wsdl4j-1.6.2.jar;
+	C:\Users\XingCheng\.m2\repository\javax\xml\jaxrpc-api\1.1\jaxrpc-api-1.1.jar;
+	C:\Users\XingCheng\.m2\repository\org\eclipse\jdt\core\compiler\ecj\4.5.1\ecj-4.5.1.jar;
+	D:\Program Files (x86)\IntelliJ IDEA 2017.3.4\lib\idea_rt.jar;
+	C:\Users\XingCheng\.IntelliJIdea2017.3\system\captureAgent\debugger-agent.jar

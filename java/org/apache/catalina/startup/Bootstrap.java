@@ -56,8 +56,8 @@ public final class Bootstrap {
      */
     private static Bootstrap daemon = null;
 
-    private static final File catalinaBaseFile;
-    private static final File catalinaHomeFile;
+    private static final File catalinaBaseFile; // tomcat实例的工作目录
+    private static final File catalinaHomeFile; // tomcat的安装目录（主要是bin和lib,可以让多个tomcat实例共享）
 
     private static final Pattern PATH_PATTERN = Pattern.compile("(\".*?\")|(([^,])*)");
 
@@ -457,6 +457,14 @@ public final class Bootstrap {
      * @param args Command line arguments to be processed
      */
     public static void main(String args[]) {
+
+        // BootStrap ClassLoader 加载的文件
+        System.out.println(System.getProperty("sun.boot.class.path"));
+        // EtxClassLoader 加载文件
+        System.out.println(System.getProperty("java.ext.dirs"));
+        // AppClassLoader 加载文件
+        System.out.println(System.getProperty("java.class.path"));
+
 
         if (daemon == null) {
             // Don't set daemon until init() has completed
